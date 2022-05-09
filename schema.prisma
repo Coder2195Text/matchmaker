@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+model Applicant{
+    id Int @id @default(autoincrement())
+    age Int
+    preferredAges String //json int[]
+    timeZone Int
+    preferredTimeZones String //json int[]
+    hobbies String
+    gender String
+    preferredGenders String //json str[]
+    poly Boolean
+    datePoly Boolean
+    aboutYou String
+    idealDesc String
+    username String
+}
+
