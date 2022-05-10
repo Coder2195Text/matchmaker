@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Form from '../components/form'
 import styles from '../styles/Home.module.css'
+import { PrismaClient } from '@prisma/client'
 
 const Home: NextPage = () => {
   return (
