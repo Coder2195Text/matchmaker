@@ -1,0 +1,14 @@
+.form {
+	padding: 10pt;
+	text-align: center;
+	font-size: xx-large;
+}
+
+.form > * {
+	margin: 3pt 0;
+}
+
+.label {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
