@@ -6,6 +6,10 @@
 	justify-content: center;
 }
 
+.signin div {
+    text-align: center;
+}
+
 .button {
     background-image: url('/images/discord-icon.svg');
     background-size: 90%;
@@ -15,12 +19,14 @@
     height: 100px;
     user-select: all;
     border: none;
+    background-color: #999999;
+    border-radius: 30px;
 
 }
 .button:hover{
-    border: 1px solid gainsboro;
+    border: 1px solid black;
 }
 
 .button:active{
-    background-color: #cccccc;
+    background-color: #666666;
 }

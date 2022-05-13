@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {
-        session ? <Form /> : <Login login={()=>{signIn()}}/>
+        session ? <Form session={session} /> : <Login login={()=>{signIn('discord')}}/>
       }
     </div>
   )
