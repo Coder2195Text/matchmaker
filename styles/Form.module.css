@@ -11,6 +11,7 @@
 .label {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
+	font-size: 32pt;
 }
 .loading {
 	width: 100vw;
@@ -19,4 +20,17 @@
 	align-items: center;
 	justify-content: center;
 	font-size: xx-large;
+}
+
+.choiceSelect{
+	padding-left: 6px;
+	padding-right: 6px;
+	text-transform: capitalize;
+}
+
+.textInput, .selectInput {
+	max-width: 90vw;
+	height: 32pt;
+	font-size: 24pt;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -1,9 +1,9 @@
-export enum GenderList {
-    MALE ,
-    FEMALE,
-    NONBINARY,
-    TRANSMALE,
-    TRANSFEMALE,
-    BIGENDER
-}
+export const GenderList = [
+    "Male",
+    "Female",
+    "Nonbinary",
+    "Transmale",
+    "Transfemale",
+    "Bigender"
+]
 

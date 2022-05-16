@@ -8,19 +8,20 @@ datasource db {
   referentialIntegrity = "prisma"
 }
 model Applicant{
-    id String @id
-    age Int
-    preferredAges String //json int[]
+    id String @id //provided
+    age Int //done
+    preferredAges String //json int[] done
     timeZone Int
-    preferredTimeZones String //json int[]
+    preferredTimeZones String //json int[] 
     hobbies String
-    gender Int
-    preferredGenders String //json int[]
+    gender String
+    preferredGenders String //json string[] working on
     poly Boolean
     datePoly Boolean
     aboutYou String
     idealDesc String
     username String
     profile String
+    name String //check
 }
 

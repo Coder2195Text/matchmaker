@@ -7,7 +7,6 @@ let fullProfile: Session;
 export default NextAuth({
     callbacks: {
         async signIn({ user, account, profile, email, credentials }) {
-            console.log(profile)
             profile.user = user
             fullProfile = <Session> profile
             return true;

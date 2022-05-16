@@ -9,9 +9,9 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
         }
     });
     if (req.query.password == process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
-        res.status(200).send(user);
+        res.status(200).json(user ? user : {});
     } else {
-        res.status(405).send(null);
+        res.status(405).json(null);
     }
     return user;
 }

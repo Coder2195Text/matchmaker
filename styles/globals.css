@@ -12,6 +12,8 @@ body {
 	background-position: bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-color: pink;
+	
 }
 
 a {
@@ -21,4 +23,10 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+.checkbox {
+	background-color: aliceblue;
+	width: 25px;
+	height: 25px;
 }
