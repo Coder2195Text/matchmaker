@@ -34,3 +34,9 @@
 	font-size: 24pt;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.textArea {
+	width: 90vw;
+	height: 40pt;
+	resize: none;
+}

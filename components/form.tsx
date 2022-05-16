@@ -73,6 +73,25 @@ function SelectAnswer(props: {
 	);
 }
 
+function OpenEndedQuestion(props: {
+	label: string;
+	name: string;
+	update: Function;
+}) {
+	return (
+		<div>
+			<label className={styles.label} htmlFor={props.name}>
+				{props.label}
+			</label>
+			{": "}
+			<textarea
+				name={props.name}
+				id={props.name}
+			></textarea>
+		</div>
+	);
+}
+
 function MultipleSelectAnswer(props: {
 	label: string;
 	name: string;
