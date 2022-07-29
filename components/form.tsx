@@ -1,14 +1,8 @@
 import styles from "../styles/Form.module.css";
 import { Dictionary, range, update } from "lodash";
-import {
-	ChangeEvent,
-	ChangeEventHandler,
-	createRef,
-	RefObject,
-	useState,
-} from "react";
+
 import { Session } from "next-auth";
-import { GenderList } from "../utils/constants";
+import { GenderList, TimeZones } from "../utils/constants";
 import { Applicant } from "@prisma/client";
 import { fetcher } from "../utils/tools";
 import useSWR from "swr";
@@ -145,13 +139,11 @@ export default function Form(props: { session: Session }) {
 	const submitData: Applicant = {
 		aboutYou: null,
 		age: null,
-		datePoly: null,
 		gender: GenderList[0],
 		hobbies: null,
 		id: user.id,
 		idealDesc: null,
 		name: null,
-		poly: null,
 		preferredAges: null,
 		preferredGenders: null,
 		preferredTimeZones: null,
@@ -209,9 +201,24 @@ export default function Form(props: { session: Session }) {
 					label="What gender(s) would you like to date?"
 					choices={GenderList}
 					update={(val: string) => {
-						console.log(val)
 						submitData.preferredGenders = val;
 					}}
+				/>
+        <SelectAnswer 
+          name="form-gmt"
+          label="Your time zone"
+          choices={TimeZones}
+          update={(val: string) => {
+						submitData.timeZone = Number(val.slice(-2));
+					}}
+        />
+        <MultipleSelectAnswer
+					name="form-perferred-gmt"
+					label="What time zone(s) people would you like to date?"
+					choices={TimeZones}
+					update={(val: string) => {
+						submitData.preferredTimeZones = val.split(" ").map(item=>item.slice(-2)).join(" ");
+          }}
 				/>
 			</div>
 		</div>

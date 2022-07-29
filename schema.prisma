@@ -16,8 +16,6 @@ model Applicant{
     hobbies String
     gender String
     preferredGenders String //json string[] working on
-    poly Boolean
-    datePoly Boolean
     aboutYou String
     idealDesc String
     username String
