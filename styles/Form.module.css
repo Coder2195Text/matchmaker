@@ -1,7 +1,9 @@
 .form {
-	padding: 10pt;
 	text-align: center;
 	font-size: xx-large;
+	width: 100vw;
+	height: 100vh;
+	overflow: scroll;
 }
 
 .form > * {
@@ -22,21 +24,32 @@
 	font-size: xx-large;
 }
 
-.choiceSelect{
+.choiceSelect {
 	padding-left: 6px;
 	padding-right: 6px;
 	text-transform: capitalize;
 }
 
-.textInput, .selectInput {
+.textInput,
+.selectInput {
 	max-width: 90vw;
 	height: 32pt;
 	font-size: 24pt;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .textArea {
 	width: 90vw;
-	height: 40pt;
-	resize: none;
+	height: 300px;
+	font-size: 20pt;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	resize: vertical;
+}
+
+.actionButton {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: "blue";
+	border: "none";
+	background-color: "none";
+	font-size: 20pt;
 }

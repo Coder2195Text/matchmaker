@@ -9,6 +9,6 @@ declare module "next-auth" {
 		username: string;
 		discriminator: string;
 		avatar: string;
-		avatar_url: string;
+		image_url: string;
 	}
 }

@@ -11,8 +11,8 @@ model Applicant{
     id String @id //provided
     age Int //done
     preferredAges String //json int[] done
-    timeZone Int
-    preferredTimeZones String //json int[] 
+    location String
+    preferredLocationRadius Int
     hobbies String
     gender String
     preferredGenders String //json string[] working on
